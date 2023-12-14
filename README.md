@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+# Тестовое задание React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Описание
 
-## Available Scripts
+Реализовать вывод списка товаров с возможностью добавления в корзину.
 
-In the project directory, you can run:
+[names](https://file.notion.so/f/f/ccb287bf-4964-456d-bc13-54d39370288f/03c05415-f6bb-4c22-b5eb-17f135da8593/Untitled.json?id=1b108050-6bba-4ceb-8618-f42747fbb2d0&table=block&spaceId=ccb287bf-4964-456d-bc13-54d39370288f&expirationTimestamp=1702670400000&signature=xeeky9FlfmNOhUm8FW_fZmu8ogb_jkG-bGV4oD8DX6o&downloadName=names.json)
 
-### `npm start`
+Описание ключей в файле products.json:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- "C" - цена товара в долларах
+- "G" - id группы
+- "T" - id товара
+- "P" - количество
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+[products](https://file.notion.so/f/f/ccb287bf-4964-456d-bc13-54d39370288f/8843149f-97a7-4a2b-a6be-ca897b9c6627/Untitled.json?id=714a0398-168f-4795-ad04-cab9a1b7f4b2&table=block&spaceId=ccb287bf-4964-456d-bc13-54d39370288f&expirationTimestamp=1702670400000&signature=-YBthAHs_UDWZxfUAMrFd_i6G1Xp_7GKUbGQF57t97Y&downloadName=products.json)
 
-### `npm test`
+Файл names.json содержит названия групп и товаров по id.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Задачи
 
-### `npm run build`
+1. Реализовать получение данных из файлов products.json и names.json с помощью HTTP клиента по интервалу 15 секунд
+2. Вывести список товаров в наличии по группам, реализовать возможность добавления товара в корзину поштучно с возможностью изменения количества в корзине (соблюдать ограничения по товарам в наличии)
+3. Обновлять курс доллара на рандомное значение от 50 до 80 раз в 20 секунд, при обновлении курса цена товаров должна изменяться.
+Если стоимость товара увеличивается, то подсвечивать ячейку с ценой товара красным, если уменьшается - зелёным
+4. Корзина должна находиться на одной странице со списком товаров, содержать итоговую цену всех товаров и сохранять своё состояние после перезагрузки страницы
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Требования:**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- React
+- Typescript
+- SSR
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**По желанию:**
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Emotion
+- MobX-State-Tree

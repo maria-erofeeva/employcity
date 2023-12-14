@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+}
+
+.App {
+  height: 100%;
+  background-color: #e2d6d6;
+  padding: 50px;
+}
+
+.ListHeader {
+  font-size: 35px;
+  font-family: "Montserrat";
+  color: #383838;
+}
+
+.MainContentWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ListLi {
+  margin-top: 7px;
+}
+
+.ListLi button:last-child {
+  margin-left: 3px;
+}
+
+.ListUl {
+  color: #383838;
+}

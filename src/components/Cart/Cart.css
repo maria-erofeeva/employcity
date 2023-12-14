@@ -1,0 +1,25 @@
+.CartHeader {
+  font-size: 25px;
+  font-family: "Montserrat";
+  color: #383838;
+  margin: 0;
+}
+
+.Cart {
+  background-color: #efe2e2;
+  padding: 7px;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+}
+
+.CartHeaderWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Total {
+  margin: 8px 0;
+  font-family: "Montserrat";
+  color: #383838;
+}
